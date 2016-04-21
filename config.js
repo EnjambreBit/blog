@@ -14,6 +14,7 @@ config = {
     production: {
         url: 'http://blog.enjambrelab.com.ar',
         mail: {},
+        /*
         database: {
             client: 'sqlite3',
             connection: {
@@ -21,6 +22,13 @@ config = {
             },
             debug: false,
             charset: 'utf8mb4'
+        },
+        */
+
+        database: {  
+           client: 'mysql',
+           connection: process.env.DATABASE_URL,
+           debug: false
         },
 
         server: {

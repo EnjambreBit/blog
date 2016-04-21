@@ -5,8 +5,8 @@ Para repetir el deploy o actualizar ghost, deberías añadir dokku como
 destino para git:
 
 ```
-	git remote add dokku enjambrebit.com.ar:blog
-	git push dokku master
+git remote add dokku dokku@enjambrelab.com.ar:blog
+git push dokku master
 ```
 
 

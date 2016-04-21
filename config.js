@@ -20,7 +20,7 @@ config = {
                 filename: path.join(__dirname, '/content/data/ghost.db')
             },
             debug: false,
-            charset: 'latin-1'
+            charset: 'utf8mb4'
         },
 
         server: {

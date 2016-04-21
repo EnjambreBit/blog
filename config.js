@@ -19,7 +19,8 @@ config = {
             connection: {
                 filename: path.join(__dirname, '/content/data/ghost.db')
             },
-            debug: false
+            debug: false,
+            encoding: "latin-1"
         },
 
         server: {

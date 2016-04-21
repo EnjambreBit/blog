@@ -28,7 +28,8 @@ config = {
         database: {  
            client: 'mysql',
            connection: process.env.DATABASE_URL,
-           debug: false
+           debug: false,
+          charset: 'utf8mb4'
         },
 
         server: {

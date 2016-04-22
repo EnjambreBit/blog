@@ -13,7 +13,18 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://blog.enjambrelab.com.ar/',
-        mail: {},
+
+        mail: {
+              transport: 'SMTP',
+              options: {
+                  service: 'Sendgrid',
+                  auth: {
+                      user: process.env.USERMAIL,
+                      pass: process.env.PASSMAIL
+                  }
+              }
+        },
+
         /*
         database: {
             client: 'sqlite3',
